@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./media/google-icon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fazer login nas Contas do Google</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form>
+      <img src="./media/google-logo.png" class="logo" />
+      <div class="user-container">
+        <h1>Guilherme da Silva Nunes</h1>
+        <div class="user-box">
+          <img src="./media/avatar.png" class="avatar" />
+          <p class="gmail">guilherme_da-nunes@estudante.sesisenai.org.br</p>
+          <img src="./media/arrow-icon.png" class="arrow-icon" />
+        </div>
+      </div>
+      <div>
+        <div class="password-box">
+          <input
+            type="password"
+            id="password"
+            name="passwd"
+            required
+            autocomplete="off"
+          />
+          <label for="password" class="password">Digite sua senha</label>
+        </div>
+        <div class="view-box">
+          <input type="checkbox" id="view" />
+          <label for="view" class="view">Mostrar senha</label>
+        </div>
+        <div class="end-box">
+          <a href="#">Esqueceu a senha?</a>
+          <button type="submit">Avançar</button>
+        </div>
+      </div>
+    </form>
+    <div class="footer">
+      <p>Português (Brasil)</p>
+      <div>
+        <img src="./media/arrow-icon.png" class="arrow-icon" />
+        <p>Ajuda</p>
+        <p>Privacidade</p>
+        <p>Termos</p>
+      </div>
+    </div>
+  </body>
+</html>

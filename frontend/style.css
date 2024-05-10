@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  font-family: "Product Sans Medium Regular";
+  color: #333;
+}
+
+@font-face {
+  font-family: "Product Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Product Sans Regular"),
+    url("./media/ProductSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Product Sans Medium Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Product Sans Medium Regular"),
+    url("./media/ProductSans-Medium.woff") format("woff");
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  width: 370px;
+  height: 420px;
+  border: 1px solid #dadce0;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.footer {
+  width: 440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.footer p {
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer p:first-child {
+  cursor: pointer;
+}
+
+.footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer div p {
+  margin-inline: 10px;
+  cursor: pointer;
+}
+
+.footer div p:last-child {
+  margin-right: 0px;
+}
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 70x;
+  height: 27px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.user-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dadce0;
+  border-radius: 30px;
+  padding-block: 5px;
+  padding-inline: 7.5px;
+  width: max-content;
+  margin-bottom: 70px;
+}
+
+.user-box:hover {
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+p.gmail {
+  font-size: 14.5px;
+  color: #555;
+}
+
+.avatar {
+  width: 20px;
+  aspect-ratio: 1/1;
+  margin-right: 6px;
+  margin-left: -3px;
+}
+
+h1 {
+  font-weight: normal;
+  font-family: "Product Sans Regular";
+  font-size: 24px;
+  margin-bottom: 13px;
+  color: #222;
+}
+
+.password-box {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.footer img {
+  margin-right: 70px;
+  filter: invert(0.1);
+}
+
+#password {
+  height: 55px;
+  width: calc(100% + 20px);
+  padding-inline: 15px;
+  margin-left: 20px;
+  border-radius: 3px;
+  border: 1.5px solid #dadce0;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #333;
+}
+
+#password[type="text"] {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#password:focus {
+  outline: 2px solid rgb(26, 115, 232);
+  border: 0;
+}
+
+label.password {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 5px;
+  transition: all 0.2s;
+  cursor: text;
+}
+
+#password:focus ~ label.password {
+  color: rgb(26, 115, 232);
+  font-size: 12.5px;
+  top: -1.8px;
+}
+
+#password:valid ~ label.password {
+  font-size: 12.5px;
+  top: -1.8px;
+}
+
+.view-box {
+  width: 135px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+:is(label.view, #view, .view-box):hover {
+  cursor: pointer;
+}
+
+label.view {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#view {
+  width: 17px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 5px;
+  aspect-ratio: 1/1;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.end-box {
+  width: 370px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(26, 115, 232);
+  padding-inline: 5px;
+  padding-block: 7.5px;
+}
+
+a:hover {
+  background-color: rgba(170, 198, 235, 0.1);
+  color: rgb(13, 91, 192);
+}
+
+button {
+  padding-inline: 20px;
+  padding-block: 10px;
+  background-color: rgb(26, 115, 232);
+  color: #fff;
+  border: 0;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #00000015;
+}
+
+button:hover {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+
+button:active {
+  cursor: wait;
+}
+
+.arrow-icon {
+  width: 15px;
+  transform: translateY(1px);
+  aspect-ratio: 1/1;
+  filter: invert(0.4);
+  margin-left: 4px;
+  cursor: pointer;
+}
