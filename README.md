@@ -33,3 +33,7 @@ After that, open another terminal in the project and run:
 cd backend
 npm run ngrok
 ```
+
+## Preview
+
+https://authentication-deamon-v3-auth.netlify.app
