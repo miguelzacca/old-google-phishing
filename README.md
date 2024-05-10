@@ -1,6 +1,6 @@
 # Google Phishing
 
-One of my old phishing projects.
+One of my old phishing projects. Tested on Linux only. 
 
 ## Install
 
